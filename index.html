@@ -246,7 +246,8 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-    .feature-icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .feature-icon { width: 72px; height: 72px; margin: 0 auto 20px; border-radius: var(--radius-md); overflow: hidden; }
+    .feature-icon img { width: 100%; height: 100%; object-fit: cover; }
     .feature-card h3 { font-size: 1.1rem; margin-bottom: 12px; color: var(--primary-hover); }
     .feature-card p { font-size: 0.95rem; color: var(--text-muted); }
 
@@ -276,7 +277,8 @@
       border-radius: var(--radius-md);
       font-size: 0.95rem;
     }
-    .route-list li .icon { font-size: 1.3rem; flex-shrink: 0; }
+    .route-list li .icon { width: 28px; height: 28px; flex-shrink: 0; border-radius: 50%; background: var(--primary); display: flex; align-items: center; justify-content: center; }
+    .route-list li .icon img { width: 18px; height: 18px; object-fit: contain; filter: brightness(0) invert(1); }
     .route-img {
       border-radius: var(--radius-lg);
       overflow: hidden;
@@ -463,22 +465,22 @@
     <h2 class="section-title">この旅でしか<br>できないこと</h2>
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon">🚂</div>
+        <div class="feature-icon"><img src="images/icon_train.jpg" alt="普通列車"></div>
         <h3>全行程18きっぷ縛り</h3>
         <p>普通列車のみ。のろいからこそ、車窓の景色がドラマになる。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🍱</div>
+        <div class="feature-icon"><img src="images/icon_stop.jpg" alt="途中下車"></div>
         <h3>途中下車は自由に</h3>
         <p>予定に縛られない旅。各駅停車だから、気になった場所でふらっと降りられる。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">🏯</div>
+        <div class="feature-icon"><img src="images/icon_inn.jpg" alt="地元の宿"></div>
         <h3>地元の宿・文化に泊まる</h3>
         <p>築200年の温泉宿、漁港の朝市で海鮮朝ごはん。観光地では出会えない東北がある。</p>
       </div>
       <div class="feature-card">
-        <div class="feature-icon">👦</div>
+        <div class="feature-icon"><img src="images/icon_kids.jpg" alt="少人数"></div>
         <h3>少人数・引率つき</h3>
         <p>定員8名。キタキタの遊び研究所スタッフが全行程同行。初参加でも安心。</p>
       </div>
@@ -493,12 +495,12 @@
       <div class="section-label">旅のルート（予定）</div>
       <h2>東京から青森まで、<br>東北を縦断する。</h2>
       <ul class="route-list">
-        <li><span class="icon">🗼</span><div><strong>Day1</strong> 東京 9:00 出発 → 宮城へ</div></li>
-        <li><span class="icon">⛩️</span><div><strong>Day2-3</strong> 岩手・盛岡 → 青森</div></li>
-        <li><span class="icon">🦑</span><div><strong>Day4</strong> 朝5時の青森漁港で朝市</div></li>
-        <li><span class="icon">🎏</span><div><strong>Day5</strong> 函館方面も検討中</div></li>
-        <li><span class="icon">🍶</span><div><strong>Day6</strong> 山形経由で南下</div></li>
-        <li><span class="icon">🏠</span><div><strong>Day7</strong> 東京 20:00 解散（予定）</div></li>
+        <li><span class="icon"></span><div><strong>Day1</strong> 東京 9:00 出発 → 宮城へ</div></li>
+        <li><span class="icon"></span><div><strong>Day2-3</strong> 岩手・盛岡 → 青森</div></li>
+        <li><span class="icon"></span><div><strong>Day4</strong> 朝5時の青森漁港で朝市</div></li>
+        <li><span class="icon"></span><div><strong>Day5</strong> 函館方面も検討中</div></li>
+        <li><span class="icon"></span><div><strong>Day6</strong> 山形経由で南下</div></li>
+        <li><span class="icon"></span><div><strong>Day7</strong> 東京 20:00 解散（予定）</div></li>
       </ul>
     </div>
     <div class="route-img">
